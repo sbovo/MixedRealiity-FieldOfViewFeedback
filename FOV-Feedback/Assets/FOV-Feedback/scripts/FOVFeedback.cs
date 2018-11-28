@@ -12,9 +12,22 @@ public interface IUnityFOVFeedback
 }
 public class FOVFeedback : MonoBehaviour {
 
-    // Unity 3D Text object that contains 
-    // the displayed TextMesh in the FOV
-    public GameObject OutputText;
+    public static FOVFeedback instance;
+
+    void Awake()
+    {
+        if (instance != null)
+            GameObject.Destroy(instance);
+        else
+        {
+            instance = this;
+            instance.OutputTextMesh = this.GetComponentInParent<TextMesh>();
+        }
+
+        DontDestroyOnLoad(this);
+    }
+
+
     // TextMesh object provided by the OutputText game object
     private TextMesh OutputTextMesh;
     // string to be affected to the TextMesh object
@@ -25,9 +38,11 @@ public class FOVFeedback : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        OutputTextMesh = OutputText.GetComponent<TextMesh>();
+        // The parent is the Unity 3D Text object that contains 
+        // the displayed TextMesh in the FOV
+        OutputTextMesh = this.GetComponentInParent<TextMesh>();
         OutputTextMesh.text = string.Empty;
-        ModifyOutputText("Hello :-)");
+        ModifyText("Hello :-)");
     }
 
     /// <summary>
@@ -36,7 +51,7 @@ public class FOVFeedback : MonoBehaviour {
     /// + Indicate that we have to update the text to display
     /// </summary>
     /// <param name="newText">new string value to display</param>
-    public void ModifyOutputText(string newText)
+    public void ModifyText(string newText)
     {
         OutputTextString = newText;
         OutputTextChanged = true;
