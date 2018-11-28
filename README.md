@@ -6,7 +6,8 @@ This project is for you!
 
 To use it, just download the unity package from the latest [release](../../releases)
 
-Of course, feel free to give your feedback and comments.
+Of course, this repository gives you the source code. Feel free to give your feedback and comments.
+
 # How to use the Unity Package 
 
 - In Unity 2017.4.x, use the Assets menu / Import Package / Custom Package… ; Choose the FOVFeedback.unitypackage you downloaded
