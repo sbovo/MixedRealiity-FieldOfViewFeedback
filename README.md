@@ -1,6 +1,6 @@
 # MixedReality-FieldOfViewFeedback
 
-You would like to display som text in the field of view for you Windows Mixed Reality apps either Immersives or Holographics?
+You would like to display some text in the field of view for you Windows Mixed Reality apps either Immersives or Holographics?
 
 This project is for you!
 

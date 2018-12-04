@@ -42,7 +42,7 @@ public class FOVFeedback : MonoBehaviour {
         // the displayed TextMesh in the FOV
         OutputTextMesh = this.GetComponentInParent<TextMesh>();
         OutputTextMesh.text = string.Empty;
-        ModifyText("Hello :-)");
+        ModifyText("");
     }
 
     /// <summary>

@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1626408212340596}
+  m_RootGameObject: {fileID: 1590675584098066}
   m_IsPrefabParent: 1
---- !u!1 &1626408212340596
+--- !u!1 &1590675584098066
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4055131755895452}
-  - component: {fileID: 23869082252976098}
-  - component: {fileID: 102542791572672710}
-  - component: {fileID: 114129139149367896}
+  - component: {fileID: 4561470334031032}
+  - component: {fileID: 23092507000731916}
+  - component: {fileID: 102627550444730746}
+  - component: {fileID: 114382886328710352}
   m_Layer: 0
   m_Name: FOVFeedback
   m_TagString: Untagged
@@ -29,12 +29,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4055131755895452
+--- !u!4 &4561470334031032
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1626408212340596}
+  m_GameObject: {fileID: 1590675584098066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
@@ -42,12 +42,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23869082252976098
+--- !u!23 &23092507000731916
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1626408212340596}
+  m_GameObject: {fileID: 1590675584098066}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -76,13 +76,13 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!102 &102542791572672710
+--- !u!102 &102627550444730746
 TextMesh:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1626408212340596}
+  m_GameObject: {fileID: 1590675584098066}
   m_Text: '{Output text}'
   m_OffsetZ: 0
   m_CharacterSize: 1
@@ -97,12 +97,12 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
---- !u!114 &114129139149367896
+--- !u!114 &114382886328710352
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1626408212340596}
+  m_GameObject: {fileID: 1590675584098066}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4394e18d01fd8cd4eb1a659a4b9fd297, type: 3}
